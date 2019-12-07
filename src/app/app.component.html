@@ -1,4 +1,10 @@
-<hello name="{{ name }}"></hello>
 <p>
   Start editing to see some magic happen :)
 </p>
+<p>
+  <span *ngIf="message !== undefined">Message: {{message}}<br></span>
+  <span *ngIf="clicked>0">Clicked: {{clicked}}</span>
+</p>
+<button (click)="log()">
+  Show/Hide Message
+</button>
